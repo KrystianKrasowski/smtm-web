@@ -1,15 +1,20 @@
 <mat-toolbar color="primary">
   <span>{{title}}</span>
+  <span class="spacer"></span>
+  <button mat-button>ACCOUNTS</button>
+  <button mat-button routerLink="/categories">CATEGORIES</button>
+  <button mat-button>NOVEMBER 2020</button>
+  <button mat-button>NEW BUDGET</button>
+  <button mat-button>LOGGED USER</button>
 </mat-toolbar>
 
-<mat-sidenav-container>
-  <mat-sidenav mode="side" opened>
-    <mat-nav-list>
-      <a mat-list-item routerLink="/dashboard">Dashboard</a>
-      <a mat-list-item routerLink="/categories">Categories</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<mat-toolbar class="no-background-color">
+  <span class="spacer"></span>
+  <button mat-button routerLink="/dashboard">SUMMARY</button>
+  <button mat-button>TRANSACTIONS</button>
+  <button mat-button>PLAN</button>
+</mat-toolbar>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
