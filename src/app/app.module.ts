@@ -9,6 +9,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CategoriesComponent } from './categories/categories.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatBadgeModule } from '@angular/material/badge';
+import { PipesModule } from './pipes.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { CategoriesComponent } from './categories/categories.component';
     AppRoutingModule,
     MatToolbarModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatProgressBarModule,
+    MatGridListModule,
+    MatBadgeModule,
+    PipesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

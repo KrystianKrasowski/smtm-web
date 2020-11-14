@@ -1,0 +1,17 @@
+.category-progress {
+  p {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+}
+
+.category-summary {
+  p {
+    width: 50%;
+    float: left;
+
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+}

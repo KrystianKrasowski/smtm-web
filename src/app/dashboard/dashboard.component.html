@@ -1,1 +1,14 @@
-<p>dashboard works!</p>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let category of categoryProgresses">
+    <div mat-line class="category-progress">
+      <p>{{category.progress}}%</p>
+    </div>
+    <div mat-line>
+      <mat-progress-bar mode="determinate" value="{{category.progress}}"></mat-progress-bar>
+    </div>
+    <div mat-line class="category-summary">
+      <p>{{category.name}}</p>
+      <p>{{category.left | money}} from {{category.total | money}} left</p>
+    </div>
+  </mat-list-item>
+</mat-list>
